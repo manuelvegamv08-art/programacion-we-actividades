@@ -1,5 +1,4 @@
-const express = require("express");
-
+import express from "express";
 const app = express();
 
 app.use(express.json());
@@ -8,6 +7,33 @@ app.use(express.json());
 let productos = [];
 
 let siguienteId = 1;
+
+productos.push(
+    {
+        id: siguienteId++,
+        nombre: "Laptop",
+        precio: 2500000,
+        stock: 10
+    },
+    {
+        id: siguienteId++,
+        nombre: "Mouse",
+        precio: 45000,
+        stock: 20
+    },
+    {
+        id: siguienteId++,
+        nombre: "Teclado",
+        precio: 85000,
+        stock: 15
+    },
+    {
+        id: siguienteId++,
+        nombre: "Monitor",
+        precio: 750000,
+        stock: 8
+    }
+);
 
 
 app.get("/productos", (req, res) => {

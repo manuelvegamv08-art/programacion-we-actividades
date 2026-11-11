@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:3000/productos/1
+method: DELETE
+body:
+  type: json
+  content: ""
+order: 5000

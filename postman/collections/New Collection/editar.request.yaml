@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/productos/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Laptop Lenovo\",\r
+
+    \    \"precio\": 3200000,\r
+
+    \    \"stock\": 15\r
+
+    }"
+order: 3000

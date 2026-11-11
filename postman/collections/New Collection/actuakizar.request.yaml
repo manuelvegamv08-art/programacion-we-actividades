@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:3000/productos/1
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"precio\": 2800000\r\n}"
+order: 4000

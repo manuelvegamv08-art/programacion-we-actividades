@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/productos
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Celular\",\r
+
+    \    \"precio\": 1200000,\r
+
+    \    \"stock\": 12\r
+
+    }"
+order: 2000
